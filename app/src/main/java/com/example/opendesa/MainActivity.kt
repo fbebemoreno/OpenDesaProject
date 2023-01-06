@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
             setOf(
                 R.id.nav_beranda,
                 R.id.nav_berita_desa,
-                R.id.nav_potensi
+                R.id.nav_potensiFragment
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -46,9 +46,7 @@ class MainActivity : AppCompatActivity() {
         toggleMenu.syncState()
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
     }
-
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (toggleMenu.onOptionsItemSelected(item)){
             return true;

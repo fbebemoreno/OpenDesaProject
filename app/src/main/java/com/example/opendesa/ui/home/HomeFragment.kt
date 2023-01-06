@@ -42,6 +42,7 @@ class HomeFragment : Fragment() {
         binding.submitIdKeluhan.setOnClickListener {
             getIdValue()
         }
+
     }
 
     override fun onDestroyView() {
