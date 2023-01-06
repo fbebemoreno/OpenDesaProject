@@ -2,11 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -14,15 +14,20 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
 
             <TextView
                 android:id="@+id/title_detail_desa"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Detail Desa"
-                android:textSize="24dp"
+                android:textAlignment="center"
+                android:text="DETAIL DESA"
+                android:textSize="16sp"
+                android:background="@color/sky_blue"
+                android:textColor="@color/white"
+                android:letterSpacing="0.3"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -34,7 +39,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/title_detail_desa"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="12dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -46,25 +51,25 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Kode Desa"
-                        android:textSize="16dp" />
+                        android:textSize="12sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Nama Desa"
-                        android:textSize="16dp" />
+                        android:textSize="12sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Website"
-                        android:textSize="16dp" />
+                        android:textSize="12sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Luas Wilayah (km2)"
-                        android:textSize="16dp" />
+                        android:textSize="12sp" />
 
                 </LinearLayout>
 
@@ -74,28 +79,32 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/kode_desa"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="31.12.35.213"
-                        android:textSize="16dp" />
+                        android:textSize="12sp" />
 
                     <TextView
+                        android:id="@+id/nama_desa"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Desa Alpha"
-                        android:textSize="16dp" />
+                        android:textSize="12sp" />
 
                     <TextView
+                        android:id="@+id/web_desa"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="www.desa-alpha.com"
-                        android:textSize="16dp" />
+                        android:text="www.desa-alpha.com/sdfsdsdfsdfsdf"
+                        android:textSize="12sp" />
 
                     <TextView
+                        android:id="@+id/luas_desa"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="1000"
-                        android:textSize="16dp" />
+                        android:textSize="12sp" />
 
                 </LinearLayout>
 

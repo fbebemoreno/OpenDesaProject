@@ -55,10 +55,11 @@ class DataDesaFragment : Fragment()
 
     private fun initData() {
         val desa = resources.getStringArray(R.array.array_desa)
+        val kode = resources.getStringArray(R.array.array_kode_desa)
         listDesa.clear()
 
         for (i in desa.indices) {
-            listDesa.add(Desa(desa[i]))
+            listDesa.add(Desa(desa[i], kode[i]))
         }
     }
 }

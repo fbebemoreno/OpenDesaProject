@@ -1,3 +1,3 @@
 package com.example.opendesa.ui.datadesa
 
-data class Desa (val name: String?)
+data class Desa (val name: String, val code: String)
