@@ -29,7 +29,7 @@ class DataDesaAdapter(private val listDesa: List<Desa>, private val activity: Fr
         holder.button.text = currentItem.namaDesa
 
         holder.button.setOnClickListener {
-            val showDetail = DetailDesaFragment()
+            val showDetail = DetailDesaFragment(currentItem)
             showDetail.show((activity as AppCompatActivity).supportFragmentManager, "showDetail")
         }
     }
