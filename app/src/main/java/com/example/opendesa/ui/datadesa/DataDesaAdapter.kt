@@ -1,6 +1,5 @@
 package com.example.opendesa.ui.datadesa
 
-import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -27,7 +26,7 @@ class DataDesaAdapter(private val listDesa: List<Desa>, private val activity: Fr
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val currentItem = listDesa[position]
 
-        holder.button.text = currentItem.name
+        holder.button.text = currentItem.namaDesa
 
         holder.button.setOnClickListener {
             val showDetail = DetailDesaFragment(currentItem)
