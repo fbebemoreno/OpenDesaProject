@@ -31,8 +31,6 @@ class DataDesaViewModel : ViewModel(){
                 _status.value = "Failure: ${e.message}"
                 Log.d("Err", _status.value!!)
             }
-
-
         }
 
     }

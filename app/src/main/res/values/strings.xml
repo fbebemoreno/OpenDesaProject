@@ -4,18 +4,4 @@
     <string name="close">Inactive</string>
 
     <string name="data_desa">Data Desa</string>
-
-    <!--  Temporary string array for Data Desa  -->
-    <string-array name="array_desa">
-        <item>Desa Alpha</item>
-        <item>Desa Beta</item>
-        <item>Desa Charlie</item>
-        <item>Desa Delta</item>
-        <item>Desa Echo</item>
-        <item>Desa Foxtrot</item>
-        <item>Desa Golf</item>
-        <item>Desa Hotel</item>
-        <item>Desa India</item>
-        <item>Desa Juliette</item>
-    </string-array>
 </resources>

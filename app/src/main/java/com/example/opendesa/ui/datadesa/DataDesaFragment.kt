@@ -5,6 +5,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -40,11 +41,17 @@ class DataDesaFragment : Fragment()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
         val layoutManager = LinearLayoutManager(context)
+
         viewModel.dataDesa.observe(this.viewLifecycleOwner){
             dataDesa = it
             Log.d("Err", dataDesa.toString())
+
+            if (dataDesa.isEmpty()) {
+                val textKosong: TextView = view.findViewById(R.id.tv_data_kosong)
+                textKosong.text = "Tidak ada data yang ditemukan!"
+            }
+
             recyclerView = view.findViewById(R.id.recyclerview_desa)
             recyclerView.layoutManager = layoutManager
             recyclerView.setHasFixedSize(true)

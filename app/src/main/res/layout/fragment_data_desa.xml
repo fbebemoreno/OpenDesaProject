@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".ui.datadesa.DataDesaFragment">
 
+    <TextView
+        android:id="@+id/tv_data_kosong"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Tidak ada data ditemukan!" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview_desa"
         android:layout_width="match_parent"
