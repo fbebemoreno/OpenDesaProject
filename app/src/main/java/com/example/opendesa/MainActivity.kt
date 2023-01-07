@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var navController: NavController
     private lateinit var appBarConfiguration: AppBarConfiguration
     lateinit var toggleMenu : ActionBarDrawerToggle
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -35,6 +36,7 @@ class MainActivity : AppCompatActivity() {
             setOf(
                 R.id.nav_beranda,
                 R.id.nav_berita_desa,
+                R.id.nav_potensiFragment,
                 R.id.nav_data_desa
             ), drawerLayout
         )
@@ -45,9 +47,7 @@ class MainActivity : AppCompatActivity() {
         toggleMenu.syncState()
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
     }
-
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (toggleMenu.onOptionsItemSelected(item)){
             return true;
