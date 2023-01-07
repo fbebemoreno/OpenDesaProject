@@ -18,16 +18,4 @@
         <item>Desa India</item>
         <item>Desa Juliette</item>
     </string-array>
-    <string-array name="array_kode_desa">
-        <item>11.11.11.111</item>
-        <item>22.22.22.222</item>
-        <item>33.33.33.333</item>
-        <item>44.44.44.444</item>
-        <item>55.55.55.555</item>
-        <item>66.66.66.666</item>
-        <item>77.77.77.777</item>
-        <item>88.88.88.888</item>
-        <item>99.99.99.999</item>
-        <item>00.00.00.000</item>
-    </string-array>
 </resources>
