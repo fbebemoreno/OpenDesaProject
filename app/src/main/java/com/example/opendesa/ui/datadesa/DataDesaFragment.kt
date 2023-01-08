@@ -49,7 +49,7 @@ class DataDesaFragment : Fragment()
 
             if (dataDesa.isEmpty()) {
                 val textKosong: TextView = view.findViewById(R.id.tv_data_kosong)
-                textKosong.text = "Tidak ada data yang ditemukan!"
+                textKosong.text = "Tidak ada data ditemukan!"
             }
 
             recyclerView = view.findViewById(R.id.recyclerview_desa)
